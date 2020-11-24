@@ -1,12 +1,12 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import TopSongs from "./TopSongs";
+import TopSong from "./TopSong";
 import ArtistDetail from "./ArtistDetail";
 
 const Artist = (props) => (
   <main>
     <Switch>
-      <Route exact path="/" render={() => <TopSongs {...props} />} />
+      <Route exact path="/" render={() => <TopSong {...props} />} />
       <Route
         exact
         path="/artistInfo/:artistName"

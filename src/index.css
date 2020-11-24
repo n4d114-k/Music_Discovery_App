@@ -65,6 +65,26 @@ nav {
   top: 2px;
 }
 
+/* Top Songs Styles */
+
+.top-songs {
+  margin: 2em 3em;
+}
+
+.song {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.song a:hover  {
+  text-decoration: underline;
+}
+
+.song strong {
+  flex: 1;
+}
+
 /* Details Page Styles */
 
 .home-button {

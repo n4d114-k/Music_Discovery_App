@@ -1,11 +1,11 @@
 import { FETCH_DATA_SUCCESS } from "../types/ActionTypes";
 
-export function topSongs(state = [], action) {
+export function topSong(state = [], action) {
   switch (action.type) {
     case FETCH_DATA_SUCCESS:
       return {
-        ...action.topSongs,
-        tracks: action.topSongs.tracks.track,
+        ...action.topSong,
+        tracks: action.topSong.tracks.track,
       };
 
     default:

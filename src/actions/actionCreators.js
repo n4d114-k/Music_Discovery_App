@@ -31,10 +31,10 @@ export function fetchData(url, type) {
 }
 
 export function fetchDataSuccess(item, type) {
-  if (type === "topSongs") {
+  if (type === "topSong") {
     return {
       type: actionTypes.FETCH_DATA_SUCCESS,
-      topSongs: item,
+      topSong: item,
     };
   } else {
     return {

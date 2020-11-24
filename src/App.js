@@ -1,4 +1,3 @@
-import React from 'react';
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 import { withRouter } from "react-router";
@@ -9,7 +8,7 @@ const mapStateToProps = (state) => {
   return {
     input: state.inputValue,
     hasErrored: state.hasErrored,
-    topArtist: state.topArtist,
+    topSong: state.topSong,
     isLoading: state.isLoading,
     artistDetails: state.artistDetails,
   };

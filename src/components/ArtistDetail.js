@@ -29,7 +29,6 @@ class ArtistDetail extends React.Component {
   }
 
   render() {
-    const { classes } = this.props;
 
     let backToHome = (
       <Link className="home-button" to="/">
