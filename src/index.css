@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+
+:root {
+  --black: #1c2b2d;
+  --platinum: #e8e8e8;
+  --maroon: #B4002B;
+  --auburn: #872239;
+  --green: #008258;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--platinum);
+  color: var(--black);
+  font-family: "Oswald", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Nav Styles */
+
+nav {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ background-color: var(--black);
+ padding: 1em;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.search-input {
+  border: 1px solid var(--maroon);
+  border-radius: 3px;
+  font-family: inherit;
+  height: 1.7em;
+  outline: 0;
+}
+
+.search-button {
+  position:relative;
+  border: none;
+  border-radius: 3px;
+  margin-left: 10px;
+  background-color: var(--maroon);
+  height: 2em;
+  font-family: inherit;
+  outline: 0;
+}
+
+.search-button:hover {
+  cursor: pointer;
+  background-color: var(--auburn);
+}
+
+.search-button:active {
+  top: 2px;
+}
+
+/* Details Page Styles */
+
+.home-button {
+  position: relative;
+  float: right;
+  border: 1px solid var(--black);
+  border-radius: 3px;
+  background-color: var(--maroon);
+  margin: 20px;
+  padding: .4em;
+  outline: 0;
+}
+
+.home-button:hover,
+.lastfm-profile-button:hover {
+  cursor: pointer;
+  background-color: var(--auburn);
+}
+
+
+.artist-container {
+  margin: 2em 3em;
+}
+
+.artist-name {
+  display: inline-block;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.lastfm-profile-button {
+  background-color: var(--maroon);
+  padding: .2em;
+  padding: .3em;
+  border-radius: 3px;
+}
